@@ -130,6 +130,28 @@ console.log(multiTable(7));
 // const upperCase2 = (word) =>
 //   word.replace(word.charAt(0), word.charAt(0).toUpperCase());
 
-const upperCase3 = (word) => word.replace(word[0], word[0].toUpperCase());
+// const upperCase3 = (word) => word.replace(word[0], word[0].toUpperCase());
 
-console.log(upperCase3("hallo"));
+// console.log(upperCase3("hallo"));
+
+// ###############################################################################################
+// 5)
+
+// It is given a name like: John Hammod
+// Your code will show the full name o and a truncated version of the name as an array. 
+//  Take the first letter of the first name and the first latter of the second name and the result must be like this:
+//  ['John Hammod', JH]
+
+const name = 'John Hammod';
+
+const truncName = function (name) {
+  let result = [];
+  const splittedName = name.split(" ");
+  const truncedName = splittedName[0][0].toUpperCase() + splittedName[1][0].toUpperCase();
+  result.push(name, truncedName);
+  return result;
+}
+
+console.log(
+  truncName('John Hammod')
+);
