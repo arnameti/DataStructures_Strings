@@ -9,6 +9,7 @@
 // ('3♠') -> return 'spades'
 // -----------------------------------------------------------
 
+/*
 const whichSuit = function (card) {
   const s = {
     "♣": "clubs",
@@ -21,7 +22,41 @@ const whichSuit = function (card) {
   // return s[card[card.length -1]]
   return s[card.slice(1)]
 };
+*/
+
+
+/*
+const whichSuit2 = function(card) {
+  return {
+    "♣": "clubs",
+    "♦": "diamonds",
+    "♥": "hearts",
+    "♠": "spades",
+  }[card.slice(1)]
+}
+*/
+
+
+/*
+const whichSuit3 = function (card) {
+  if (card.includes("♣")) return "clubs";
+  if (card.includes("♦")) return "diamonds";
+  if (card.includes("♥")) return "hearts";
+  if (card.includes("♠")) return "spades";
+}
+*/
+
+const whichSuit4 = (c) => 
+({
+  "♣": "clubs",
+  "♦": "diamonds",
+  "♥": "hearts",
+  "♠": "spades",
+}[c.slice(1)])
+
 
 console.log(
-  whichSuit('3♣')
+  whichSuit4('3♣')
 );
+
+
