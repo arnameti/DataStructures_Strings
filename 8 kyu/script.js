@@ -184,6 +184,7 @@ console.log(compare2(5, "5"));
 // In this kata you need to check the provided array (x) for good ideas 'good' and bad ideas 'bad'. If there are one or two good ideas, return 'Publish!', if there are more than 2 return 'I smell a series!'. If there are no good ideas, as is often the case, return 'Fail!'.
 // -----------------------------------------------------------
 
+/*
 const ideas = ["good", "bad", "good", "bad"];
 
 
@@ -204,4 +205,23 @@ const checkIdea = function (arr) {
 };
 
 console.log(checkIdea(ideas));
+*/
 
+
+// ###############################################################################################
+// 9)
+// Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+// Return your answer as a number.
+
+
+const arr = [5, "6", 3, "2", 7, "9"];
+let sum = 0;
+
+const sumArr = function (arr) {
+  for (let i of arr) {
+    sum += Number(i);
+  }
+  return sum;
+};
+
+console.log(sumArr(arr));
