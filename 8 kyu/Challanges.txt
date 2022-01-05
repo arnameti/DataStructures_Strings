@@ -44,9 +44,12 @@
 ###################################################################################
 5)
 
-// Don Drumphet lives in a nice neighborhood, but one of his neighbors has started to let his house go. Don Drumphet wants to build a wall between his house and his neighbor’s, and is trying to get the neighborhood association to pay for it. He begins to solicit his neighbors to petition to get the association to build the wall. Unfortunately for Don Drumphet, he cannot read very well, has a very limited attention span, and can only remember two letters from each of his neighbors’ names. As he collects signatures, he insists that his neighbors keep truncating their names until two letters remain, and he can finally read them.
+// 5)
 
-// Your code will show Full name of the neighbor and the truncated version of the name as an array. If the number of the characters in name is less than or equal to two, it will return an array containing only the name as is"
+// It is given a name like: John Hammod
+// Your code will show the full name o and a truncated version of the name as an array. 
+//  Take the first letter of the first name and the first latter of the second name and the result must be like this:
+//  ['John Hammod', JH]
 
 ###################################################################################
 6)

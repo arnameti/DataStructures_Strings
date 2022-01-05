@@ -138,10 +138,12 @@ console.log(multiTable(7));
 // 5)
 
 // It is given a name like: John Hammod
-// Your code will show the full name o and a truncated version of the name as an array. 
+// Your code will show the full name o and a truncated version of the name as an array.
 //  Take the first letter of the first name and the first latter of the second name and the result must be like this:
 //  ['John Hammod', JH]
+// -----------------------------------------------------------
 
+/*
 const name = 'John Hammod';
 
 const truncName = function (name) {
@@ -155,3 +157,20 @@ const truncName = function (name) {
 console.log(
   truncName('John Hammod')
 );
+*/
+
+// ###############################################################################################
+// 7)
+
+// Write a function that will compare two values, one will be a number and one will be a string. Return true if they are the same character (regardless of their different data types) and return false if they are not.
+
+// To make this challange harder and to promp the challenger to read up about coercion I have disabled some of the built in methods including .toString(), .join(), .split(), parseInt and .Number().
+// -----------------------------------------------------------
+
+const compare = (number, string) => number == string;
+const compare2 = (number, string) => number === string;
+
+
+console.log(compare(5, "5"));
+console.log(compare2(5, "5"));
+
