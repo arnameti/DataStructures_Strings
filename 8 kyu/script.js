@@ -167,10 +167,41 @@ console.log(
 // To make this challange harder and to promp the challenger to read up about coercion I have disabled some of the built in methods including .toString(), .join(), .split(), parseInt and .Number().
 // -----------------------------------------------------------
 
+/*
 const compare = (number, string) => number == string;
 const compare2 = (number, string) => number === string;
 
 
 console.log(compare(5, "5"));
 console.log(compare2(5, "5"));
+
+*/
+
+// ###############################################################################################
+// 8)
+// For every good kata idea there seem to be quite a few bad ones!
+
+// In this kata you need to check the provided array (x) for good ideas 'good' and bad ideas 'bad'. If there are one or two good ideas, return 'Publish!', if there are more than 2 return 'I smell a series!'. If there are no good ideas, as is often the case, return 'Fail!'.
+// -----------------------------------------------------------
+
+const ideas = ["good", "bad", "good", "bad"];
+
+
+const checkIdea = function (arr) {
+  let goodIdeas = [];
+  for (let good of arr) {
+    if (good === 'good') {
+      goodIdeas.push(good);
+    }
+  }
+  if (goodIdeas.length === 0) {
+    return "Fail!";
+  } else if (goodIdeas.length > 2) {
+    return "I smell a series!";
+  } else {
+    return "Publish!";
+  }
+};
+
+console.log(checkIdea(ideas));
 
