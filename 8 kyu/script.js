@@ -361,6 +361,7 @@ console.log(removeChar2('hallo'));
 */
 // -----------------------------------------------------------
 
+/*
 const string = "a,b,c,d";
 
 const changeString = function (string) {
@@ -376,3 +377,38 @@ const changeString = function (string) {
 };
 
 console.log(changeString(string));
+*/
+// ###############################################################################################
+// 17)
+// Write a function that returns a string in which firstname is swapped with last name.
+// nameShuffler('John McClane'); => "McClane John"
+// -----------------------------------------------------------
+
+/*
+const swapName = function (name) {
+  return [name.split(' ')[1], name.split(' ')[0]].join(' ');
+}
+console.log(swapName('Arnor Ameti'));
+// --------------------
+
+const swapName2 = function (name) {
+  const splittedName = name.split(" ");
+  return `${splittedName[1]} ${splittedName[0]}`;
+};
+console.log(swapName2("Arnor Ameti"));
+// --------------------
+
+const swapName3 = (name) => name.split(" ").reverse().join(" ");
+console.log(swapName2("Arnor Ameti"));
+*/
+// ###############################################################################################
+// 18)
+// write me a function stringy that takes a size and returns a string of alternating '1s' and '0s'.
+// the string should start with a 1.
+// a string with size 6 should return :'101010'.
+// with size 4 should return : '1010'.
+// with size 12 should return : '101010101010'.
+
+// The size will always be positive and will only use whole numbers.
+// -----------------------------------------------------------
+
