@@ -230,16 +230,34 @@ console.log(sumArr(arr));
 // ###############################################################################################
 // 10)
 // Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+// -----------------------------------------------------------
 
+/*
 let stringOfDigits = "912837465";
 const replaceDigits = function (stringOfDigits) {
   return stringOfDigits.split("").map((i) => (i < 5 ? 0 : 1)).join("");
 };
 
+*/
+
+// ###############################################################################################
+// 11)
+// -----------------------------------------------------------
+
+// Create a function called shortcut to remove all the lowercase vowels in a given string.
+
+// "hello"     -->  "hll"
+// "codewars"  -->  "cdwrs"
+// "goodbye"   -->  "gdby"
+// "HELLO"     -->  "HELLO"
 
 
+const shortcut4 = (str) =>
+  str
+    .split("")
+    .filter((e) => ["a", "e", "i", "o", "u"].indexOf(e) === -1)
+    .join("");
 
-
-
+console.log(shortcut4("hello"));
 
 
