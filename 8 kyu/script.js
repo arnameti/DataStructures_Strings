@@ -242,16 +242,15 @@ const replaceDigits = function (stringOfDigits) {
 
 // ###############################################################################################
 // 11)
-// -----------------------------------------------------------
-
 // Create a function called shortcut to remove all the lowercase vowels in a given string.
 
 // "hello"     -->  "hll"
 // "codewars"  -->  "cdwrs"
 // "goodbye"   -->  "gdby"
 // "HELLO"     -->  "HELLO"
+// -----------------------------------------------------------
 
-
+/*
 const shortcut4 = (str) =>
   str
     .split("")
@@ -259,5 +258,18 @@ const shortcut4 = (str) =>
     .join("");
 
 console.log(shortcut4("hello"));
+*/
+
+// ###############################################################################################
+// 13)
+// Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+// The output should be two capital letters with a dot separating them.
+// -----------------------------------------------------------
 
 
+const convertName2 = (name) =>
+  name
+    .split(" ")
+    .map((e) => e[0].toUpperCase())
+    .join(".");
+console.log(convertName2("Arnor Ameti"));
