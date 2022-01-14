@@ -266,10 +266,63 @@ console.log(shortcut4("hello"));
 // The output should be two capital letters with a dot separating them.
 // -----------------------------------------------------------
 
-
+/*
 const convertName2 = (name) =>
   name
     .split(" ")
     .map((e) => e[0].toUpperCase())
     .join(".");
 console.log(convertName2("Arnor Ameti"));
+*/
+
+// ###############################################################################################
+// 14)
+// Complete the solution so that it reverses the string passed into it.
+// 'world'  =>  'dlrow'
+// 'word'   =>  'drow'
+// -----------------------------------------------------------
+
+const reverseString = function (string) {
+  let arr = [];
+  for (let i = string.length - 1; i >= 0; i--) {
+    arr.push(string[i]);
+  }
+  return arr.join('');
+};
+console.log(reverseString("hallo"));
+// --------------------
+
+const reverseString2 = function (string) {
+  let reversedString = '';
+  for (let i = string.length - 1; i >= 0; i--) {
+    reversedString += string[i];
+  }
+  return reversedString;
+};
+console.log(reverseString2("hallo"));
+// --------------------
+
+const reverseString3 = function (string) {
+  return string.split("").reverse().join("");
+};
+console.log(reverseString3("hallo"));
+// --------------------
+
+const reverseString4 = (str) => str.split("").reverse().join("");
+console.log(reverseString4("hallo"));
+
+const reverseString5 = function(str) {
+  if (str === "")
+    return "";
+  else
+    return reverseString(str.substr(1)) + str.charAt(0);
+}
+console.log(reverseString5("hallo"));
+// --------------------
+
+const reverseString6 = function(str) {
+  return (str === '') ? '' : reverseString(str.substr(1)) + str.charAt(0);
+}
+console.log(reverseString6("hallo"));
+// --------------------
+
