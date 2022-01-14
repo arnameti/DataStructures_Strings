@@ -412,6 +412,7 @@ console.log(swapName2("Arnor Ameti"));
 // The size will always be positive and will only use whole numbers.
 // -----------------------------------------------------------
 
+/*
 const printBinary = function (number) {
   let binary = "";
   for (let i = 1; i <= number; i++) {
@@ -436,3 +437,37 @@ console.log(printBinary2(6));
 
 const printBinary3 = (x) => "".padStart(x, "10");
 console.log(printBinary2(6));
+*/
+
+// ###############################################################################################
+// 19)
+// Finish the uefaEuro2016() function so it return string just like in the examples below:
+
+// uefaEuro2016(['Germany', 'Ukraine'],[2, 0]) // "At match Germany - Ukraine, Germany won!"
+// uefaEuro2016(['Belgium', 'Italy'],[0, 2]) // "At match Belgium - Italy, Italy won!"
+// uefaEuro2016(['Portugal', 'Iceland'],[1, 1]) // "At match Portugal - Iceland, teams played draw."
+// -----------------------------------------------------------
+
+const uefaEuro20162 = function (arr1, arr2) {
+  let string = '';
+  if (arr2[0] === arr2[1]) {
+    return string = `At match ${arr1[0]} - ${arr1[1]}, teams played draw`;
+  } else if (arr2[0] > arr2[1] ) {
+    return string = `At match ${arr1[0]} - ${arr1[1]}, ${arr1[0]} won`;
+  } else {
+    return `At match ${arr1[0]} - ${arr1[1]}, ${arr1[1]} won`;
+  }
+}
+console.log(uefaEuro20162(["Germany", "Ukraine"], [2, 0]));
+console.log(uefaEuro20162(["Belgium", "Italy"], [0, 2]));
+console.log(uefaEuro20162(["Portugal", "Iceland"], [1, 1]));
+// --------------------
+
+const uefaEuro20163 = (arr1, arr2) => `At match ${arr1[0]} - ${arr1[1]}, ${arr2[0] === arr2[1] ? 'teams played draw.' : (arr2[0] > arr2[1] ? arr1[0] : arr1[1]) + ' won!'}`
+
+console.log(uefaEuro20163(["Germany", "Ukraine"], [2, 0]));
+console.log(uefaEuro20163(["Belgium", "Italy"], [0, 2]));
+console.log(uefaEuro20163(["Portugal", "Iceland"], [1, 1]));
+
+
+
