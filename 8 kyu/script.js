@@ -207,21 +207,39 @@ const checkIdea = function (arr) {
 console.log(checkIdea(ideas));
 */
 
-
 // ###############################################################################################
 // 9)
 // Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
 // Return your answer as a number.
+// -----------------------------------------------------------
 
-
+/*
 const arr = [5, "6", 3, "2", 7, "9"];
 let sum = 0;
 
 const sumArr = function (arr) {
   for (let i of arr) {
-    sum += Number(i);
+    sum += parseInt(i);
   }
   return sum;
 };
 
 console.log(sumArr(arr));
+*/
+
+// ###############################################################################################
+// 10)
+// Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+let stringOfDigits = "912837465";
+const replaceDigits = function (stringOfDigits) {
+  return stringOfDigits.split("").map((i) => (i < 5 ? 0 : 1)).join("");
+};
+
+
+
+
+
+
+
+

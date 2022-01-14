@@ -47,7 +47,7 @@
 // 5)
 
 // It is given a name like: John Hammod
-// Your code will show the full name o and a truncated version of the name as an array. 
+// Your code will show the full name and a truncated version of the name as an array. 
 //  Take the first letter of the first name and the first latter of the second name and the result must be like this:
 //  ['John Hammod', JH]
 
