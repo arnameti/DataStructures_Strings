@@ -412,3 +412,27 @@ console.log(swapName2("Arnor Ameti"));
 // The size will always be positive and will only use whole numbers.
 // -----------------------------------------------------------
 
+const printBinary = function (number) {
+  let binary = "";
+  for (let i = 1; i <= number; i++) {
+    if (i % 2 !== 0) {
+      binary += 1;
+    } else {
+      binary += 0;
+    }
+  }
+  return binary;
+};
+// --------------------
+console.log(printBinary(6));
+
+const printBinary2 = function (number) {
+  let binary = "";
+  for (let i = 1; i <= number; i++) i % 2 !== 0 ? (binary += 1) : (binary += 0);
+  return binary;
+};
+// --------------------
+console.log(printBinary2(6));
+
+const printBinary3 = (x) => "".padStart(x, "10");
+console.log(printBinary2(6));
