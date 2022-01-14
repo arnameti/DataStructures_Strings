@@ -334,6 +334,7 @@ console.log(reverseString6("hallo"));
 // It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
 // -----------------------------------------------------------
 
+/*
 const removeChar = function (string) {
   return string.slice(1, -1);
 };
@@ -341,5 +342,37 @@ console.log(removeChar('hallo'));
 
 const removeChar2 = str => str.slice(1, -1);
 console.log(removeChar2('hallo'));
+*/
 
+// ###############################################################################################
+// 16)
+// You are given a string containing a sequence of character sequences separated by commas.
+// Write a function which returns a new string containing the same character sequences except the first and the last ones but this time separated by spaces.
+// If the input string is empty or the removal of the first and last items would cause the resulting string to be empty, return an empty value (represented as a generic value NULL in the examples below).
 
+/*
+"1,2,3"      =>  "2"
+"1,2,3,4"    =>  "2 3"
+"1,2,3,4,5"  =>  "2 3 4"
+
+""     =>  NULL
+"1"    =>  NULL
+"1,2"  =>  NULL
+*/
+// -----------------------------------------------------------
+
+const string = "a,b,c,d";
+
+const changeString = function (string) {
+  const noSpaces = string
+    .split(",")
+    .filter((e) => e !== "")
+    .join(",");
+  if (noSpaces.length <= 4 || undefined) {
+    return "NULL";
+  } else {
+    return noSpaces.slice(1, -1).split(",").join(" ");
+  }
+};
+
+console.log(changeString(string));
