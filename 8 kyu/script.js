@@ -448,6 +448,7 @@ console.log(printBinary2(6));
 // uefaEuro2016(['Portugal', 'Iceland'],[1, 1]) // "At match Portugal - Iceland, teams played draw."
 // -----------------------------------------------------------
 
+/*
 const uefaEuro20162 = function (arr1, arr2) {
   let string = '';
   if (arr2[0] === arr2[1]) {
@@ -468,6 +469,7 @@ const uefaEuro20163 = (arr1, arr2) => `At match ${arr1[0]} - ${arr1[1]}, ${arr2[
 console.log(uefaEuro20163(["Germany", "Ukraine"], [2, 0]));
 console.log(uefaEuro20163(["Belgium", "Italy"], [0, 2]));
 console.log(uefaEuro20163(["Portugal", "Iceland"], [1, 1]));
+*/
 
-
+//
 
