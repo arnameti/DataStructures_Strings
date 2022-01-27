@@ -242,6 +242,7 @@ const replaceDigits = function (stringOfDigits) {
 
 // ###############################################################################################
 // 11)
+<<<<<<< HEAD
 // Create a function called shortcut to remove all the lowercase vowels in a given string.
 
 // "hello"     -->  "hll"
@@ -328,6 +329,16 @@ const reverseString6 = function(str) {
 console.log(reverseString6("hallo"));
 // --------------------
 */
+=======
+// -----------------------------------------------------------
+
+// Create a function called shortcut to remove all the lowercase vowels in a given string.
+
+// "hello"     -->  "hll"
+// "codewars"  -->  "cdwrs"
+// "goodbye"   -->  "gdby"
+// "HELLO"     -->  "HELLO"
+>>>>>>> 782beebe319fce4b3a1adbd7bc265db95c1c0d44
 
 // ###############################################################################################
 // 15)
@@ -344,6 +355,7 @@ const removeChar2 = str => str.slice(1, -1);
 console.log(removeChar2('hallo'));
 */
 
+<<<<<<< HEAD
 // ###############################################################################################
 // 16)
 // You are given a string containing a sequence of character sequences separated by commas.
@@ -470,6 +482,15 @@ console.log(uefaEuro20163(["Germany", "Ukraine"], [2, 0]));
 console.log(uefaEuro20163(["Belgium", "Italy"], [0, 2]));
 console.log(uefaEuro20163(["Portugal", "Iceland"], [1, 1]));
 */
+=======
+const shortcut4 = (str) =>
+  str
+    .split("")
+    .filter((e) => ["a", "e", "i", "o", "u"].indexOf(e) === -1)
+    .join("");
+
+console.log(shortcut4("hello"));
+>>>>>>> 782beebe319fce4b3a1adbd7bc265db95c1c0d44
 
 //
 
